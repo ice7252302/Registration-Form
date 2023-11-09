@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p class="title-info">Please fill out this form with the required information</p>
+    <form class="form">
+      <section class="info">
+        <label for="name">Enter Your First Name:<input type="text" id="name" />
+        <label for="last-name">Enter Your Last Name:<input type="text" id="last-name" />
+        <label for="email">Enter Your  E-mail:<input type="email" id="email" />
+        <label for="password">Create a New Password:<input type="password" id="password" />
+      </section>
+        
+      <section class="account">
+        <fieldset>
+          <legend>Account type (required)</legend>
+          <label for="personal-account"><input type="radio" name="account-type" id="personal-account" />Personal</label>
+          <label for="business-account"><input type="radio" name="account-type" id="business-account" />Business</label>
+        </fieldset>
+      </section>
+      <section class="add-info">
+        <label for="Upload">Upload a profile picture:
+        <input type="file" id="Upload"/></label>
+        <label for="client-age">Input your age (years):</label>
+        <input type="number" id="client-age"/>
+        <label for="referrer">How did you hear about us?
+        <select id="referrer">
+          <option value="1">(select one)</option>
+          <option value="2">freeCodeCamp News</option>
+          <option value="3">freeCodeCamp YouTube Channel</option>
+          <option value="4">freeCodeCamp Forum</option>
+        </select>
+        </label>
+        <label>Provide a bio:</label>
+          <textarea placeholder="I like coding on the beach.." cols="30" rows="20"></textarea>
+        <label><input type="checkbox" />I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+        <button type="submit">Submit</button>
+      </section>
+
+    </form>
+  </body>
+</html>
